@@ -356,7 +356,6 @@ RSpec.describe "major deprecations" do
       G
 
       ruby <<-RUBY
-        require 'rubygems'
         require 'bundler'
         require 'bundler/vendored_thor'
 
