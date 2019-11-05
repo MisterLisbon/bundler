@@ -140,7 +140,7 @@ module Bundler
       end
     end
 
-    def self.handle_no_command_error(command, has_namespace = $thor_runner)
+    def self.handle_no_command_error(command, has_namespace = false)
       if Bundler.feature_flag.plugins? && Bundler::Plugin.command?(command)
         return Bundler::Plugin.exec_command(command, ARGV[1..-1])
       end
