@@ -89,7 +89,6 @@ RSpec.describe "bundler/inline#gemfile" do
 
     expect(out).to include("Installing activesupport")
     err_lines = err.split("\n")
-    err_lines.reject!{|line| line =~ /\.rb:\d+: warning: / }
     expect(err_lines).to be_empty
     expect(exitstatus).to be_zero if exitstatus
   end
