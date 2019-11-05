@@ -357,7 +357,6 @@ RSpec.describe "major deprecations" do
 
       ruby <<-RUBY
         require 'bundler'
-        require 'bundler/vendored_thor'
 
         Bundler.setup
         Bundler.setup
